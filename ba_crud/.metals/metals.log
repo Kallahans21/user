@@ -1,0 +1,108 @@
+2023.08.18 14:33:24 INFO  Started: Metals version 1.0.0+20-46905735-SNAPSHOT in folders 'C:\Users\Salas\Desktop\ba_crud\ba_crud' for client Visual Studio Code 1.81.1.
+ago 18, 2023 2:33:24 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFORMACIÓN: Flyway Community Edition 9.21.1 by Redgate
+ago 18, 2023 2:33:24 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFORMACIÓN: See release notes here: https://rd.gt/416ObMi
+ago 18, 2023 2:33:24 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFORMACIÓN: 
+ago 18, 2023 2:33:25 PM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFORMACIÓN: Database: jdbc:h2:file:C:\Users\Salas\Desktop\ba_crud\ba_crud\.metals\metals (H2 2.1)
+ago 18, 2023 2:33:25 PM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+INFORMACIÓN: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+ago 18, 2023 2:33:25 PM org.flywaydb.core.internal.command.DbValidate validate
+INFORMACIÓN: Successfully validated 4 migrations (execution time 00:00.066s)
+ago 18, 2023 2:33:25 PM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFORMACIÓN: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+ago 18, 2023 2:33:25 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFORMACIÓN: Current version of schema "PUBLIC": << Empty Schema >>
+ago 18, 2023 2:33:25 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFORMACIÓN: Migrating schema "PUBLIC" to version "1 - Create tables"
+ago 18, 2023 2:33:25 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFORMACIÓN: Migrating schema "PUBLIC" to version "2 - Server discovery"
+ago 18, 2023 2:33:25 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFORMACIÓN: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+ago 18, 2023 2:33:25 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFORMACIÓN: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+ago 18, 2023 2:33:26 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFORMACIÓN: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.071s)
+2023.08.18 14:33:26 INFO  time: initialize in 1.79s
+2023.08.18 14:33:27 WARN  Build server is not auto-connectable.
+2023.08.18 14:34:32 WARN  no build target for: C:\Users\Salas\Desktop\ba_crud\ba_crud\app\models\UsuarioEntity.java
+Exception in thread "pool-1-thread-9" java.lang.NoClassDefFoundError: com/sun/source/tree/Tree
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:46)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:43)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$foldingRange$3(MetalsLspService.scala:1557)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.ClassNotFoundException: com.sun.source.tree.Tree
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 9 more
+Exception in thread "pool-1-thread-5" java.lang.NoClassDefFoundError: com/sun/source/tree/Tree
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:46)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:43)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$foldingRange$3(MetalsLspService.scala:1557)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.ClassNotFoundException: com.sun.source.tree.Tree
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 9 more
+2023.08.18 14:34:38 INFO  no build target found for C:\Users\Salas\Desktop\ba_crud\ba_crud\app\models\UsuarioEntity.java. Using presentation compiler with project's scala-library version: 3.3.0
+Exception in thread "pool-1-thread-27" java.lang.NoClassDefFoundError: com/sun/source/tree/Tree
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:46)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:43)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$foldingRange$3(MetalsLspService.scala:1557)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.ClassNotFoundException: com.sun.source.tree.Tree
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 9 more
+2023.08.18 14:34:40 WARN  no build target for: C:\Users\Salas\Desktop\ba_crud\ba_crud\app\models\UsuarioEntity.java
+Exception in thread "pool-1-thread-7" java.lang.NoClassDefFoundError: com/sun/source/tree/Tree
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:46)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:43)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$foldingRange$3(MetalsLspService.scala:1557)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.ClassNotFoundException: com.sun.source.tree.Tree
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 9 more
+ago 18, 2023 2:34:42 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\Salas\Desktop\ba_crud\ba_crud\.metals\.reports\metals-full\r_compiler-error_1692390882622
+ago 18, 2023 2:34:42 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\Salas\Desktop\ba_crud\ba_crud\.metals\.reports\metals-full\r_compiler-error_1692390882857
+2023.08.18 14:34:42 INFO  time: code lens generation in 1.88s
+ago 18, 2023 2:34:52 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+ago 18, 2023 2:34:53 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMACIÓN: Unsupported notification method: $/setTrace
+2023.08.18 14:41:50 INFO  Shutting down server
+2023.08.18 14:41:50 INFO  shutting down Metals
+2023.08.18 14:41:50 INFO  Exiting server

@@ -1,0 +1,19 @@
+@import play.api.i18n._
+@import javax.inject.Inject
+@import play.api.mvc._
+@import play.api.data.Form
+@import play.api.data.Forms._
+
+@()(implicit request: MessagesRequest[AnyContent], flash: Flash, messagesProvider: MessagesProvider)
+
+@main(messages("crearUsuario.titulo")) {
+    <h1>@messages("crearUsuario.titulo")</h1>
+
+    @form(action = routes.UsuarioController.save()) {
+        @inputText(usuarioForm("nombre"))
+        @inputDate(usuarioForm("fechaNacimiento"))
+        @inputCheckbox(usuarioForm("activo"))
+
+        <button type="submit">@messages("guardar")</button>
+    }
+}

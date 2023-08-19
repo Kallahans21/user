@@ -1,0 +1,31 @@
+@import com.ba.UsuarioEntity
+
+@(usuarios: List[UsuarioEntity])
+
+@main("Lista de Usuarios") {
+    <h1>Lista de Usuarios</h1>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Fecha de Nacimiento</th>
+            <th>Activo</th>
+            <th>Acciones</th>
+        </tr>
+        @for(usuario <- usuarios) {
+            <tr>
+                <td>@usuario.getId()</td>
+                <td>@usuario.getNombre()</td>
+                <td>@usuario.getFechaNacimiento()</td>
+                <td>@{ if(usuario.isActivo()) "Si" else "No" }</td>
+                <td>
+                    <a href="@routes.UsuarioController.edit(usuario.getId())">Editar</a>
+                    <a href="@routes.UsuarioController.delete(usuario.getId())">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </table>
+
+    <a href="@routes.UsuarioController.create()">Crear Usuario</a>
+}
